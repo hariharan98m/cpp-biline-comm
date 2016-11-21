@@ -1,0 +1,22 @@
+INTRODUCTION-
+The idea is based on a delocalised simple database, a text file, that can be accessed by the program during run. Every new user in the network has a personalised account with the company with his chat history associated with the name of his friend. The program displays the chat of users connecting these associated names and extracting chats using objects.
+PROGRAMMING LOGIC-
+ 	An user interface to know the user if he's existing or take him new if he wants to enter the network.
+
+	A user check(if he exists) is done comparing his name with the list of users.  
+	User password is coded with * using a for loop to take very character and replace it with a *(password logic).
+
+ 	Stream object reads the user file to display the list of users.
+ 	Match is made to a friend the user want to chat, looking up in the user datafile.
+function()
+	guy a string is a strcat of gname and mname(friend's name and myname)
+	me a string is a strcat of mname and gname(myname and friend's name)
+	guy text file is opened that contains the friend's chat history.
+In real time when the friend types something the put pointer of guy file moves through a string.
+We compare the earlier file pointer of guy with the recent(using  tellg() )  and if found different, take that portion of the chat to the screen.
+ 	This is made to continue till the user wishes to exit from chat giving "exit" .
+
+
+
+Note-
+C++ can't handle 2 tasks simultaneously so friend's chat is read only after user gives a cin. read()  doesn't work when the program is in cin. So press "ENTER " to update your  messages.
